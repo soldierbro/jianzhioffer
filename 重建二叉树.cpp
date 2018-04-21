@@ -1,4 +1,3 @@
-```cpp
 /**
  * Definition for binary tree
  * struct TreeNode {
@@ -34,4 +33,3 @@ public:
         return root;
     }
 };
-```
