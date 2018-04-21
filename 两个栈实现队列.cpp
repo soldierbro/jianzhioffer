@@ -1,4 +1,3 @@
-```cpp
 class Solution
 {
 public:
@@ -22,4 +21,3 @@ private:
     stack<int> stack1;
     stack<int> stack2;
 };
-```
