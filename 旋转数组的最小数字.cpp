@@ -1,4 +1,3 @@
-```cpp
 class Solution {
 public:
     int minNumberInRotateArray(vector<int> rotateArray) {
@@ -28,4 +27,3 @@ public:
         return rotateArray[mid];
     }
 };
-```
