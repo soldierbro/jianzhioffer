@@ -4,12 +4,12 @@ void print1tomaxN(int n){
 	char* number=new char[n+1];
 	memset(number,'0',n);
 	number[n]='\0';
-	while(!isend(number)){
+	while(!Increment(number)){
 		Print(number);
 	}
 	delete []number;
 }
-bool isend(char* number){
+bool Increment(char* number){
 	bool flag=false;
 	int cur=0;//进位 
 	int len=strlen(number);
@@ -19,7 +19,8 @@ bool isend(char* number){
 			sum++;
 		}
 		if(sum>=10){      //产生进位 
-			if(i==0){
+			if(i==0){		//判断什么时候终止+1，使用strcmp函数比较每次number与“999…999”的大小，但是复杂度是O(n)
+							//Increment函数复杂度为O(1)，只有当“999…999”+1产生进位的时候终止，此时Increment返回true	
 				flag=true;
 			}
 			else{
