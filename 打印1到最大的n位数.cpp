@@ -38,7 +38,7 @@ void Print(char* number){
 	int len=strlen(number);
 	for(int i=0;i<len;i++){
 		if(isbegin0&&number[i]!='0'){
-			isbegin=false;
+			isbegin0=false;
 		}
 		if(!isbegin0){
 			printf("%c",number[i]);
