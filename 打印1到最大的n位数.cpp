@@ -1,4 +1,6 @@
 void print1tomaxN(int n){
+	if(n<=0)
+		return;
 	char* number=new char[n+1];
 	memset(number,'0',n);
 	number[n]='\0';
